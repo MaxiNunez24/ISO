@@ -1,0 +1,7 @@
+  PID TTY          TIME CMD
+    1 hvc0     00:00:00 init(Debian)
+    7 hvc0     00:00:00 init
+  686 ?        00:00:00 SessionLeader
+  687 ?        00:00:00 Relay(688)
+  688 pts/0    00:00:00 bash
+  694 pts/0    00:00:00 ps
