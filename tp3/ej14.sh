@@ -1,4 +1,4 @@
-#!/Segubin/bash
+#!/bin/bash
 if [ $# -lt 3 ]; then
 	echo "Por favor ingrese un directorio, -a o -b y una cadena"
 else
