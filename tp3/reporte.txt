@@ -1,0 +1,2 @@
+Usuario		Cantidad de archivos con la extensión .txt
+maxi		3
