@@ -1,14 +1,15 @@
 #!/bin/bash
 function push {
-	stack=("$1 ${stack[@]}")
+	stack=($1 ${stack[@]})
 }
 
 pop(){
 	lenght=${#stack[@]}
 	
 	if [ $lenght -ne 0 ]; then
-		echo ${stack[$((lenght -1))]}
-		unset ${stack[$((lenght -1))]}
+		echo "${stack[0]}"
+		unset stack[0]
+		stack=(${stack[@]})
 	fi
 }
 
@@ -21,11 +22,16 @@ print(){
 	echo ${stack[@]}
 }
 
-stack=(1 2 3 4 5)
-lenght
-push 7
-print
-push 3
-pop
-lenght
+stack=()
+
+for ((i=0; i<10; i++)); do
+	push $i
+done
+
+for i in {1..3}; do
+	pop
+done
+
+lenght 
+
 print
